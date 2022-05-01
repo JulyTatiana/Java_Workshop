@@ -5,24 +5,32 @@ import java.util.Scanner;
 
 
 public class ExerciseFifteen {
-    Scanner entry = new Scanner(System.in);
+
+    Scanner number = new Scanner(System.in);
+
     public int Menu() {
         int choice;
-        System.out.print("****** GESTION CINEMATOGRÁFICA ********\n" +
-                "1-NUEVO ACTOR\n" +
-                "2-BUSCAR ACTOR\n" +
-                "3-ELIMINAR ACTOR\n" +
-                "4-MODIFICAR ACTOR\n" +
-                "5-VER TODOS LOS ACTORES\n" +
-                "6-VER PELICULAS DE LOS ACTORES\n" +
-                "7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES\n" +
-                "8-SALIR\n");
-        choice = entry.nextInt();
+        System.out.print(
+                "******** FILM MANAGEMENT ********\n" +
+                "1-NEW ACTOR\n" +
+                "2-SEARCH ACTOR\n" +
+                "3-DELETE ACTOR\n" +
+                "4-CHANGE ACTOR\n" +
+                "5-WATCH ALL ACTORS\n" +
+                "6-WATCH THE ACTORS' FILMS\n" +
+                "7-SEE CATEGORY OF THE ACTORS' FILMS\n" +
+                "8-EXIT\n");
+        choice = number.nextInt();
+        if (choice != 8) {
+            System.out.print("\nIncorrect option! please select another\n");
+        }
         return choice;
     }
+
     public void chooseOption() {
         try {
             int option = Menu();
+
             switch (option) {
                 case 1:
                 case 2:
@@ -41,7 +49,7 @@ public class ExerciseFifteen {
             }
         } catch (InputMismatchException e) {
             System.out.println("\nYou should write an integer number! Please execute this program again\n");
-            entry.nextLine();
+            number.nextLine();
         }
     }
 }
