@@ -1,0 +1,13 @@
+
+^
+java:S6208"CMerge the previous cases into this one using comma-separated label.(ÌÊëÎüÿÿÿÿ
+X
+java:S6208"CMerge the previous cases into this one using comma-separated label.(ÒñŠ{
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(˜èˆäúÿÿÿÿ
+M
+java:S6126
+"2Replace this String concatenation with Text block.(˜èˆäúÿÿÿÿ
+<	java:S131""Add a default case to this switch.(­Ö¹§úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¬ÖÀŸøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(°ùâğ
